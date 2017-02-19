@@ -34,13 +34,14 @@
     </header>
 
     <main class="container">
-      <section>
-        <h2>Summary</h2>
+
+      <section class="resume-section resume-section--text-only">
+        <h2 class="resume-section__title">Summary</h2>
         <p>This is my great summary!</p>
       </section>
 
-      <section>
-        <h2>Skills</h2>
+      <section class="resume-section">
+        <h2 class="resume-section__title">Skills</h2>
         <p>
           Expert: Python, HTML/CSS, JavaScript, SQL, Git/Mercurial, OS X, Linux/Unix, Vim<br>
           Experienced: C, Objective-C, PHP, Java, Bash, Jenkins CI
@@ -56,7 +57,7 @@
             <div class="item-header">
               <div class="item-header__left">
                 <h3 class="item-title">Bachelor of Arts in Computer Science</h3>
-                <p class="item-dates">September 2008 -- March 2012</p>
+                <p class="item-dates">September 2008 &ndash; March 2012</p>
               </div>
               <div class="item-header__right">
                 <address class="item-location">
@@ -80,7 +81,7 @@
             <div class="item-header">
               <div class="item-header__left">
                 <h3 class="item-title">Software Developer</h3>
-                <p class="item-dates">April 2012 -- May 2013</p>
+                <p class="item-dates">April 2012 &ndash; May 2013</p>
               </div>
               <div class="item-header__right">
                 <address class="item-location">
@@ -90,86 +91,81 @@
               </div>
             </div>
 
-            <ul>
+            <ul class="item-bullets">
               <li>Developed multiple internal web services providing backend functionality to the company's most popular products.</li>
               <li>Maintained several Linux servers and provided support to fellow employees.</li>
               <li>Contributed to the codebase of the company's core iOS products, implementing customer requested features and fixing bugs.</li>
               <li>Planned and initiated a redesign of the company's website.</li>
             </ul>
           </li>
-        </ul>
 
-        <!--<h3>Software Developer Intern</h3>-->
-        <!--<p>June 2011 - August 2011</p>-->
-        <!--<address>-->
-          <!--Ultralingua Inc.<br>-->
-          <!--Minneapolis, MN-->
-        <!--</address>-->
-        <!--<ul>-->
-          <!--<li>Developed and deployed an internal web application for editing large, multilingual dictionary datasets.</li>-->
-        <!--</ul>-->
+          <li class="item">
+            <div class="item-header">
+              <div class="item-header__left">
+                <h3 class="item-title">Software Developer Intern</h3>
+                <p class="item-dates">June 2011 &ndash; August 2011</p>
+              </div>
+              <div class="item-header__right">
+                <address class="item-location">
+                  Ultralingua Inc.<br>
+                  Minneapolis, MN
+                </address>
+              </div>
+            </div>
+
+            <ul class="item-bullets">
+              <li>Developed and deployed an internal web application for editing large, multilingual dictionary datasets.</li>
+            </ul>
+          </li>
 
         <!--<h3>Computer Science Lab Assistant</h3>-->
-        <!--<p>September 2010 - March 2012</p>-->
-        <!--<address>-->
-          <!--Carleton College<br>-->
-          <!--Northfield, MN-->
-        <!--</address>-->
-        <!--<ul>-->
-          <!--<li>Assisted students with introductory and intermediate classwork.</li>-->
-          <!--<li>Provided support for Mac OS X, BASH, {\LaTeX} and several programming languages.</li>-->
-        <!--</ul>-->
+          <!--<p>September 2010 - March 2012</p>-->
+          <!--<address>-->
+            <!--Carleton College<br>-->
+            <!--Northfield, MN-->
+            <!--</address>-->
+          <!--<ul>-->
+            <!--<li>Assisted students with introductory and intermediate classwork.</li>-->
+            <!--<li>Provided support for Mac OS X, BASH, {\LaTeX} and several programming languages.</li>-->
+            <!--</ul>-->
 
-        <!--<h3>Computer Science Grader</h3>-->
-        <!--<p>September 2010 - Novemebr 2011</p>-->
-        <!--<address>-->
-          <!--Carleton College<br>-->
-          <!--Northfield, MN-->
-        <!--</address>-->
-        <!--<ul>-->
-          <!--<li>Graded assignments for CS 208: Computer Organization and Architecture, CS 204: Software Design and CS 251: Programming Languages.</li>-->
-          <!--<li>Evaluated assignments for correctness and provided extensive feedback on programming style and practices.</li>-->
-        <!--</ul>-->
+          <!--<h3>Computer Science Grader</h3>-->
+          <!--<p>September 2010 - Novemebr 2011</p>-->
+          <!--<address>-->
+            <!--Carleton College<br>-->
+            <!--Northfield, MN-->
+            <!--</address>-->
+          <!--<ul>-->
+            <!--<li>Graded assignments for CS 208: Computer Organization and Architecture, CS 204: Software Design and CS 251: Programming Languages.</li>-->
+            <!--<li>Evaluated assignments for correctness and provided extensive feedback on programming style and practices.</li>-->
+            <!--</ul>-->
 
-        <!--<h3>German Teaching Assistant</h3>-->
-        <!--<p>January 2010 - June 2010</p>-->
-        <!--<address>-->
-          <!--Carleton College<br>-->
-          <!--Northfield, MN-->
-        <!--</address>-->
-        <!--<ul>-->
-          <!--<li>Taught two one hour sessions of intermediate German per week.</li>-->
-          <!--<li>Assisted professors and other TAs in creating new lesson plans and activities.</li>-->
-        <!--</ul>-->
+          <!--<h3>German Teaching Assistant</h3>-->
+          <!--<p>January 2010 - June 2010</p>-->
+          <!--<address>-->
+            <!--Carleton College<br>-->
+            <!--Northfield, MN-->
+            <!--</address>-->
+          <!--<ul>-->
+            <!--<li>Taught two one hour sessions of intermediate German per week.</li>-->
+            <!--<li>Assisted professors and other TAs in creating new lesson plans and activities.</li>-->
+            <!--</ul>-->
 
-        <!--<h3>Apple Technician</h3>-->
-        <!--<p>Summer/Winter 2009-10</p>-->
-        <!--<address>-->
-          <!--GeekHampton-->
-          <!--Sag Harbor, NY-->
-        <!--</address>-->
-        <!--<ul>-->
-          <!--<li>Diagnosed and repaired Apple products, performed data recovery, provided technical support and knowledge to customers.</li>-->
-          <!--<li>Completed Apple Certified Mac Technician (ACMT) training.</li>-->
-        <!--</ul>-->
+          <!--<h3>Apple Technician</h3>-->
+          <!--<p>Summer/Winter 2009-10</p>-->
+          <!--<address>-->
+            <!--GeekHampton-->
+            <!--Sag Harbor, NY-->
+            <!--</address>-->
+          <!--<ul>-->
+            <!--<li>Diagnosed and repaired Apple products, performed data recovery, provided technical support and knowledge to customers.</li>-->
+            <!--<li>Completed Apple Certified Mac Technician (ACMT) training.</li>-->
+            <!--</ul>-->
+        </ul>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-
-        <!--\title{Trunzo Building Contractors, Inc.}-->
-        <!--\dates{April 2013 - Current}-->
-
-        <!--\begin{position}-->
-        <!--\vspace{-\baselineskip}-->
-        <!--\begin{list2}-->
-        <!--\item Designed and developed trunzobuilding.com for Trunzo-->
-        <!--Building Contractors, Inc. using Drupal with a custom-->
-        <!--theme and modules.-->
-        <!--\item Actively maintain the codebase and provide support for the-->
-        <!--content authors.-->
-        <!--\end{list2}-->
-        <!--\end{position}-->
+      <!--<section>-->
+        <!--<h2>Projects</h2>-->
 
         <!--\title{Internet Personal Assistant}-->
         <!--\dates{September 2011 - March 2012}-->
@@ -183,21 +179,26 @@
         <!--powered frontend.-->
         <!--\end{list2}-->
         <!--\end{position}-->
+      <!--</section>-->
+
+      <section class="resume-section">
+        <h2 class="resume-section__title">Certifications</h2>
+        <ul class="resume-section__items">
+
+          <li class="item">
+            <div class="item-header">
+              <div class="item-header__left">
+                <h3 class="item-title">Apple Certified Mac Technician</h3>
+                <p class="item-dates">August 2009 -- Current</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
 
-      <section>
-        <h2>Certifications</h2>
-
-        <h3>Apple Certified Mac Technician</h3>
-        <p>August 2009 -- Current</p>
-
-      </section>
-
-      <section>
-        <h2>References</h2>
-
-
-      </section>
+      <!--<section>-->
+        <!--<h2>References</h2>-->
+      <!--</section>-->
 
     </main>
   </body>

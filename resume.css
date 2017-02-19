@@ -35,6 +35,7 @@ address {
 .resume-header {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 1em;
 }
 
 .resume-header__name {
@@ -57,6 +58,15 @@ address {
 
 .resume-section {
   display: flex;
+  margin-bottom: 1em;
+}
+
+.resume-section--text-only {
+  align-items: baseline;
+}
+
+.resume-section > p {
+  margin: 0;
 }
 
 .resume-section__title {
@@ -64,6 +74,7 @@ address {
   margin: 0;
   font-size: 1.2em;
   font-weight: normal;
+  font-variant-caps: small-caps;
 }
 
 .resume-section__items {
@@ -71,6 +82,14 @@ address {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.item {
+  margin-bottom: 0.5em;
+}
+
+.item:last-child {
+  margin-bottom: 0;
 }
 
 .item-header {
@@ -99,6 +118,10 @@ address {
 
 .item-description {
   margin: 0;
+}
+
+.item-bullets {
+  list-style: disc;
 }
 
 .container {
@@ -165,3 +188,9 @@ address {
   }
 }
 
+@media print {
+  body {
+    font-size: 12px;
+    font-family: serif;
+  }
+}
