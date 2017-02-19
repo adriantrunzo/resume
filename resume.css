@@ -28,32 +28,78 @@ body {
   background-color: #fff;
 }
 
-header {
+address {
+  font-style: normal;
+}
+
+.resume-header {
   display: flex;
   flex-flow: row wrap;
 }
 
-header > h1 {
+.resume-header__name {
   flex: 1 100%;
   text-align: center;
+  margin: 0.2rem 0;
 }
 
-header > address {
+.resume-header__address {
   flex: 1 auto;
 }
 
-header > address:first-of-type {
+.resume-header__address:first-of-type {
   text-align: left;
 }
 
-header > address:last-of-type {
+.resume-header__address:last-of-type {
   text-align: right;
 }
 
-address {
-  font-style: normal
+.resume-section {
+  display: flex;
 }
 
+.resume-section__title {
+  width: 15%;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.resume-section__items {
+  width: 85%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item-header__left {
+  width: 60%;
+  text-align: left;
+}
+
+.item-header__right {
+  width: 40%;
+  text-align: right;
+}
+
+.item-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.item-dates {
+  margin: 0;
+}
+
+.item-description {
+  margin: 0;
+}
 
 .container {
   position: relative;
