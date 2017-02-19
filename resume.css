@@ -40,12 +40,14 @@ header {
 
 header > h1 {
   width: 100%;
+  flex: 0 0 auto;
   text-align: center;
   margin: 0.2rem 0;
 }
 
 header > address {
   width: 50%;
+  flex: 0 0 auto;
 }
 
 header > address:first-of-type {
@@ -54,6 +56,10 @@ header > address:first-of-type {
 
 header > address:last-of-type {
   text-align: right;
+}
+
+main {
+  margin-bottom: 1rem;
 }
 
 section {
@@ -70,59 +76,44 @@ section > ul > li {
 
 section:last-of-type,
 section p:last-of-type,
-section > ul > li {
+section > ul > li:last-of-type {
   margin-bottom: 0;
+}
+
+section h2,
+section h3,
+section address {
+  margin: 0;
+  font-size: 1rem;
 }
 
 section > h2 {
   width: 15%;
-  margin: 0;
-  font-size: 1rem;
+  flex: 0 0 auto;
   font-weight: normal;
   font-variant-caps: small-caps;
 }
 
 section > ul {
   width: 85%;
+  flex: 0 0 auto;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.item {
-  margin-bottom: 0.5rem;
+section > ul > li {
+  position: relative;
 }
 
-.item:last-child {
-  margin-bottom: 0;
-}
-
-.item-header {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.item-header__left {
-  width: 60%;
-  text-align: left;
-}
-
-.item-header__right {
-  width: 40%;
+section > ul address {
+  position: absolute;
+  top: 0;
+  right: 0;
   text-align: right;
 }
 
-.item-header h3 {
-  font-size: 1.125rem;
-}
-
-.item-header h3,
-.item-header p,
-.item-header address {
-  margin: 0;
-}
-
-.item-bullets {
+section > ul ul {
   list-style: disc;
 }
 
