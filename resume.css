@@ -32,52 +32,57 @@ address {
   font-style: normal;
 }
 
-.resume-header {
+header {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
-.resume-header__name {
-  flex: 1 100%;
+header > h1 {
+  width: 100%;
   text-align: center;
   margin: 0.2rem 0;
 }
 
-.resume-header__address {
-  flex: 1 auto;
+header > address {
+  width: 50%;
 }
 
-.resume-header__address:first-of-type {
+header > address:first-of-type {
   text-align: left;
 }
 
-.resume-header__address:last-of-type {
+header > address:last-of-type {
   text-align: right;
 }
 
-.resume-section {
+section {
   display: flex;
-  margin-bottom: 1em;
-}
-
-.resume-section--text-only {
   align-items: baseline;
 }
 
-.resume-section > p {
-  margin: 0;
+section,
+section p,
+section > ul > li {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-.resume-section__title {
+section:last-of-type,
+section p:last-of-type,
+section > ul > li {
+  margin-bottom: 0;
+}
+
+section > h2 {
   width: 15%;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1rem;
   font-weight: normal;
   font-variant-caps: small-caps;
 }
 
-.resume-section__items {
+section > ul {
   width: 85%;
   list-style: none;
   margin: 0;
@@ -85,7 +90,7 @@ address {
 }
 
 .item {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .item:last-child {
@@ -107,16 +112,13 @@ address {
   text-align: right;
 }
 
-.item-title {
-  margin: 0;
-  font-size: 1.2em;
+.item-header h3 {
+  font-size: 1.125rem;
 }
 
-.item-dates {
-  margin: 0;
-}
-
-.item-description {
+.item-header h3,
+.item-header p,
+.item-header address {
   margin: 0;
 }
 
