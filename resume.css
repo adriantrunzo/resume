@@ -93,15 +93,8 @@ section > ul {
   padding: 0;
 }
 
-section > ul > li {
-  position: relative;
-}
-
 section > ul address {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
+  margin: 1rem 0;
 }
 
 section > ul ul {
@@ -149,6 +142,20 @@ section > ul ul {
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+
+@media print, (min-width: 576px) {
+  section > ul > li {
+    position: relative;
+  }
+
+  section > ul address {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    margin: 0;
   }
 }
 
