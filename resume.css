@@ -32,10 +32,15 @@ address {
   font-style: normal;
 }
 
+a {
+  color: #333;
+}
+
 header {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 header > h1 {
@@ -182,8 +187,19 @@ section > ul ul {
 }
 
 @media print {
-  body {
+  html {
     font-size: 12px;
-    font-family: serif;
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section > h2 {
+    font-size: 1.2rem;
   }
 }
