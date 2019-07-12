@@ -1,160 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Adrian Trunzo">
 
     <title>Adrian Trunzo &ndash; Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+      section {
+        margin-bottom: 1rem;
+      }
 
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      section p,
+      section h2 {
+        margin-bottom: 1rem;
+      }
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-    <link href="resume.css" rel="stylesheet">
+      section h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        font-variant-caps: small-caps;
+      }
+
+      section:last-of-type,
+      section address,
+      section p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .section-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .section-list ul {
+        list-style: disc;
+      }
+
+      .section-list > li {
+        margin-bottom: 1rem;
+      }
+
+      .section-list h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+    </style>
   </head>
-
   <body>
-
-    <header class="container">
-      <h1>Adrian Trunzo</h1>
-      <address>
-        10 Cedar Trail<br>
-        East Hampton, NY 11937<br>
-        <a href="tel:+01-631-413-2205" rel="nofollow">+01-631-413-2205</a>
-      </address>
-      <address>
-        <a href="mailto:adriantrunzo@outlook.com">adriantrunzo@outlook.com</a><br>
-        <a href="https://www.linkedin.com/in/adriantrunzo">linkedin.com/in/adriantrunzo</a><br>
-        <a href="https://github.com/adriantrunzo">github.com/adriantrunzo</a>
-      </address>
+    <header class="container mt-2">
+      <h1 class="text-center">Adrian Trunzo</h1>
+      <div class="row">
+        <div class="col-md">
+          <address>
+            10 Cedar Trail<br>
+            East Hampton, NY 11937<br>
+            <a href="tel:+01-631-413-2205" rel="nofollow">+01-631-413-2205</a>
+          </address>
+        </div>
+        <div class="col-md">
+          <address class="text-md-right">
+            <a href="mailto:trunzoap@gmail.com">trunzoap@gmail.com</a><br>
+            <a href="https://github.com/adriantrunzo">github.com/adriantrunzo</a>
+          </address>
+        </div>
+      </div>
     </header>
-
     <main class="container">
-
-      <section>
-        <h2>Summary</h2>
-        <p>I am a developer with experience in full stack web development and mobile apps. I have also held positions in a wide array of IT domains. I am based in North America and looking to work remotely as a software engineer.</p>
+      <section class="row">
+        <div class="col-md-2">
+          <h2>Summary</h2>
+        </div>
+        <div class="col-md">
+          <p>I am a developer with experience in full stack web development and mobile apps. I have also held positions in a wide array of IT domains. I am based in North America and looking to work remotely as a software engineer.</p>
+        </div>
       </section>
-
-      <section>
-        <h2>Skills</h2>
-        <p>
-          <strong>Experienced</strong>: Python, HTML/CSS, Git, Vim, Bash, macOS<br>
-          <strong>Familiar</strong>: JavaScript, C, Java, Objective-C, Rust, SQL, Linux
-        </p>
+      <section class="row">
+        <div class="col-md-2">
+          <h2>Skills</h2>
+        </div>
+        <div class="col-md">
+          <p>
+            <strong>Experienced</strong>: Python, HTML/CSS, Git, Vim, Bash, macOS<br>
+            <strong>Familiar</strong>: JavaScript, C, Java, Objective-C, Rust, SQL, Linux
+          </p>
+        </div>
       </section>
-
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <h3>Bachelor of Arts in Computer Science</h3>
-            <p>September 2008 &ndash; March 2012</p>
-            <address>Carleton College<br>Northfield, MN</address>
-            <ul>
-              <li>Graduated Magna Cum Laude and with distinction in major.</li>
-              <li>Relevant Coursework: Algorithms, Natural Language Processing, Database Systems, Computer Networks, Software Design, Programming Languages, Artificial Intelligence, Computer Organization and Architecture, Statistics.</li>
-            </ul>
-          </li>
-        </ul>
+      <section class="row">
+        <div class="col-md-2">
+          <h2>Education</h2>
+        </div>
+        <div class="col-md">
+          <ul class="section-list">
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <h3>Bachelor of Arts in Computer Science</h3>
+                  <p>September 2008 &ndash; March 2012</p>
+                </div>
+                <div class="col-md">
+                  <address class="text-md-right">Carleton College<br>Northfield, MN</address>
+                </div>
+              </div>
+              <ul>
+                <li>Graduated Magna Cum Laude and with distinction in major.</li>
+                <li>Relevant Coursework: Algorithms, Natural Language Processing, Database Systems, Computer Networks, Software Design, Programming Languages, Artificial Intelligence, Computer Organization and Architecture, Statistics.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
-
-      <section>
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <h3>Assistant Network Engineer</h3>
-            <p>February 2014 &ndash; December 2016</p>
-            <address>NOLS<br>Lander, WY</address>
-            <ul>
-              <li>Deployed and maintained networking equipment and applications at various school campuses throughout the world.</li>
-              <li>Helped to expand the monitoring and management capabilities of network equipment and user workstations at the school.</li>
-              <li>Working closely with campus directors, overhauled the equipment budgeting and purchase process leading to improved support at remote locations.</li>
-              <li>Planned and implemented new infrastructure projects, including copper and fiber optic cable installations.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Help Desk Specialist</h3>
-            <p>October 2013 &ndash; February 2014</p>
-            <address>NOLS<br>Lander, WY</address>
-            <ul>
-              <li>Provided timely and knowledgeable support to school staff and faculty for software, hardware, and network issues.</li>
-              <li>Helped streamline the school's ticketing system and collaborated on better remote management solutions of staff workstations.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Software Developer</h3>
-            <p>April 2012 &ndash; May 2013</p>
-            <address>Ultralingua Inc.<br>Minneapolis, MN</address>
-            <ul>
-              <li>Developed multiple internal web services providing backend functionality to the company's most popular products.</li>
-              <li>Maintained several Linux servers and provided support to fellow employees.</li>
-              <li>Contributed to the codebase of the company's core iOS products, implementing customer requested features and fixing bugs.</li>
-              <li>Planned and initiated a redesign of the company's website.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Software Developer Intern</h3>
-            <p>June 2011 &ndash; August 2011</p>
-            <address>Ultralingua Inc.<br>Minneapolis, MN</address>
-            <ul>
-              <li>Developed and deployed an internal web application for editing large, multilingual dictionary datasets.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Computer Science Lab Assistant</h3>
-            <p>September 2010 &ndash; March 2012</p>
-            <address>Carleton College<br>Northfield, MN</address>
-            <ul>
-              <li>assisted students with introductory and intermediate classwork.</li>
-              <li>provided support for mac os x, bash, {\latex} and several programming languages.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Computer Science Grader</h3>
-            <p>September 2010 &ndash; Novemebr 2011</p>
-            <address>Carleton College<br>Northfield, MN</address>
-            <ul>
-              <li>Graded assignments for CS 208: Computer Organization and Architecture, CS 204: Software Design and CS 251: Programming Languages.</li>
-              <li>Evaluated assignments for correctness and provided extensive feedback on programming style and practices.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>German Teaching Assistant</h3>
-            <p>January 2010 &ndash; June 2010</p>
-            <address>Carleton College<br>Northfield, MN</address>
-            <ul>
-              <li>Taught two one hour sessions of intermediate German per week.</li>
-              <li>Assisted professors and other TAs in creating new lesson plans and activities.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Apple Technician</h3>
-            <p>Summer/Winter 2009 and 2010</p>
-            <address>GeekHampton<br>Sag Harbor, NY</address>
-            <ul>
-              <li>Diagnosed and repaired Apple products, performed data recovery, provided technical support and knowledge to customers.</li>
-              <li>Completed Apple Certified Mac Technician (ACMT) training.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Help Desk Technician</h3>
-            <p>Summer 2007 and 2008</p>
-            <address>Ross School<br>East Hampton, NY</address>
-            <ul>
-              <li>Help students, faculty, and staff with hardware and software issues.</li>
-              <li>Complete hardware repairs on the school's laptop fleet as needed.</li>
-              <li>Assist with laptop deployment and fleet imaging.</li>
-            </ul>
-          </li>
-        </ul>
+      <section class="row">
+        <div class="col-md-2">
+          <h2>Experience</h2>
+        </div>
+        <div class="col-md">
+          <ul class="section-list">
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <h3>Assistant Network Engineer</h3>
+                  <p>February 2014 &ndash; December 2016</p>
+                </div>
+                <div class="col-md">
+                  <address class="text-md-right">NOLS<br>Lander, WY</address>
+                </div>
+              </div>
+              <ul>
+                <li>Deployed and maintained networking equipment and applications at various school campuses throughout the world.</li>
+                <li>Helped to expand the monitoring and management capabilities of network equipment and user workstations at the school.</li>
+                <li>Working closely with campus directors, overhauled the equipment budgeting and purchase process leading to improved support at remote locations.</li>
+                <li>Planned and implemented new infrastructure projects, including copper and fiber optic cable installations.</li>
+              </ul>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <h3>Help Desk Specialist</h3>
+                  <p>October 2013 &ndash; February 2014</p>
+                </div>
+                <div class="col-md">
+                  <address class="text-md-right">NOLS<br>Lander, WY</address>
+                </div>
+              </div>
+              <ul>
+                <li>Provided timely and knowledgeable support to school staff and faculty for software, hardware, and network issues.</li>
+                <li>Helped streamline the school's ticketing system and collaborated on better remote management solutions of staff workstations.</li>
+              </ul>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <h3>Software Developer</h3>
+                  <p>April 2012 &ndash; May 2013</p>
+                </div>
+                <div class="col-md">
+                  <address class="text-md-right">Ultralingua Inc.<br>Minneapolis, MN</address>
+                </div>
+              </div>
+              <ul>
+                <li>Developed multiple internal web services providing backend functionality to the company's most popular products.</li>
+                <li>Maintained several Linux servers and provided support to fellow employees.</li>
+                <li>Contributed to the codebase of the company's core iOS products, implementing customer requested features and fixing bugs.</li>
+                <li>Planned and initiated a redesign of the company's website.</li>
+              </ul>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <h3>Software Developer Intern</h3>
+                  <p>June 2011 &ndash; August 2011</p>
+                </div>
+                <div class="col-md">
+                  <address class="text-md-right">Ultralingua Inc.<br>Minneapolis, MN</address>
+                </div>
+              </div>
+              <ul>
+                <li>Developed and deployed an internal web application for editing large, multilingual dictionary datasets.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Computer Science Lab Assistant</h3>
+              <p>September 2010 &ndash; March 2012</p>
+              <address>Carleton College<br>Northfield, MN</address>
+              <ul>
+                <li>assisted students with introductory and intermediate classwork.</li>
+                <li>provided support for mac os x, bash, {\latex} and several programming languages.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Computer Science Grader</h3>
+              <p>September 2010 &ndash; Novemebr 2011</p>
+              <address>Carleton College<br>Northfield, MN</address>
+              <ul>
+                <li>Graded assignments for CS 208: Computer Organization and Architecture, CS 204: Software Design and CS 251: Programming Languages.</li>
+                <li>Evaluated assignments for correctness and provided extensive feedback on programming style and practices.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>German Teaching Assistant</h3>
+              <p>January 2010 &ndash; June 2010</p>
+              <address>Carleton College<br>Northfield, MN</address>
+              <ul>
+                <li>Taught two one hour sessions of intermediate German per week.</li>
+                <li>Assisted professors and other TAs in creating new lesson plans and activities.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Apple Technician</h3>
+              <p>Summer/Winter 2009 and 2010</p>
+              <address>GeekHampton<br>Sag Harbor, NY</address>
+              <ul>
+                <li>Diagnosed and repaired Apple products, performed data recovery, provided technical support and knowledge to customers.</li>
+                <li>Completed Apple Certified Mac Technician (ACMT) training.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Help Desk Technician</h3>
+              <p>Summer 2007 and 2008</p>
+              <address>Ross School<br>East Hampton, NY</address>
+              <ul>
+                <li>Help students, faculty, and staff with hardware and software issues.</li>
+                <li>Complete hardware repairs on the school's laptop fleet as needed.</li>
+                <li>Assist with laptop deployment and fleet imaging.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
-
       <section>
         <h2>Certifications</h2>
         <ul>
@@ -168,7 +245,6 @@
           </li>
         </ul>
       </section>
-
       <section>
         <h2>Interests</h2>
         <p>Programming, rock climbing, skiing, backpacking, cooking</p>
